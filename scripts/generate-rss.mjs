@@ -32,9 +32,9 @@ const items = posts.map((post) => `
   </item>`).join('')
 const feed = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel>
-  <title>Aowei / Notes</title>
+  <title>aoweichen 的博客</title>
   <link>${siteUrl}/</link>
-  <description>记录 Nova 的设计、实现与验证。</description>
+  <description>Nova 的开发笔记。</description>
   <language>zh-cn</language>${items}
 </channel></rss>\n`
 await writeFile(output, feed)

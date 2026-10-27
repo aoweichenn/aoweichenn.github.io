@@ -4,20 +4,20 @@ const siteUrl = 'https://aoweichenn.github.io'
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: 'Aowei / Notes',
-  description: '记录 Nova 的设计、实现与验证：关于 Agent 工作台的开发笔记。',
+  title: 'aoweichen 的博客',
+  description: '记录 Nova 开发过程的个人博客。',
   cleanUrls: true,
   lastUpdated: true,
   sitemap: { hostname: siteUrl },
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
-    ['link', { rel: 'alternate', type: 'application/rss+xml', title: 'Aowei / Notes RSS', href: '/feed.xml' }],
-    ['meta', { name: 'theme-color', content: '#f7f6f1' }],
+    ['link', { rel: 'alternate', type: 'application/rss+xml', title: 'aoweichen 的博客 RSS', href: '/feed.xml' }],
+    ['meta', { name: 'theme-color', content: '#faf9f6' }],
     ['meta', { property: 'og:type', content: 'website' }]
   ],
   themeConfig: {
     logo: '/favicon.svg',
-    siteTitle: 'aowei / notes',
+    siteTitle: 'aoweichen',
     nav: [
       { text: '首页', link: '/' },
       { text: '文章', link: '/posts/' },
@@ -57,8 +57,8 @@ export default defineConfig({
     docFooter: { prev: '上一篇', next: '下一篇' },
     lastUpdated: { text: '最后更新' },
     footer: {
-      message: 'Built with Vue & VitePress · Nova is still a prototype.',
-      copyright: '© 2026 Aowei Chen'
+      message: 'Vue + VitePress · 网站源码公开在 GitHub',
+      copyright: '© 2026 aoweichen'
     }
   }
 })

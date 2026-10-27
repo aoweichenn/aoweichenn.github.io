@@ -1,8 +1,8 @@
-# Aowei / Notes
+# aoweichen 的博客
 
-Source for [aoweichenn.github.io](https://aoweichenn.github.io/), a Vue 3 + VitePress blog about Nova's design, implementation, and validation.
+Source for [aoweichenn.github.io](https://aoweichenn.github.io/), a Vue 3 + VitePress personal blog about Nova.
 
-The site is built with the open-source [VitePress](https://vitepress.dev/) framework. Nova's implementation repository remains private; published articles cover public project direction and prototype status.
+The site uses the open-source [VitePress](https://vitepress.dev/) framework. Nova's implementation repository remains private; the posts contain only public notes.
 
 ## Local development
 
