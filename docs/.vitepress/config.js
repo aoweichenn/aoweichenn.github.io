@@ -8,6 +8,13 @@ export default defineConfig({
   description: '记录 Nova 开发过程的个人博客。',
   cleanUrls: true,
   lastUpdated: true,
+  transformPageData(pageData) {
+    if (/^posts\/(?!index\.md$)[^/]+\.md$/.test(pageData.relativePath)) {
+      const frontmatter = pageData.frontmatter
+      frontmatter.pageClass = [frontmatter.pageClass, 'blog-article'].filter(Boolean).join(' ')
+      frontmatter.aside = frontmatter.aside ?? false
+    }
+  },
   sitemap: { hostname: siteUrl },
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
@@ -57,7 +64,7 @@ export default defineConfig({
     docFooter: { prev: '上一篇', next: '下一篇' },
     lastUpdated: { text: '最后更新' },
     footer: {
-      message: 'Vue + VitePress · 网站源码公开在 GitHub',
+      message: '',
       copyright: '© 2026 aoweichen'
     }
   }
